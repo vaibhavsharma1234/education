@@ -2,6 +2,7 @@ import AndroidApp from './components/AndroidApp'
 import Navbar from './components/Navbar'
 import OurResults from './components/OurResults'
 import OfflineCenter from './components/OfflineCenter'
+import Table from './components/Table'
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <AndroidApp/>
       <OurResults/>
       <OfflineCenter/>
+      <Table/>
       
     </div>
   )
