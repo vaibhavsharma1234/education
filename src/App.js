@@ -1,5 +1,4 @@
-import Navbar from './components/Navbar'
-import React from 'react'
+import Navbar from './compt from 'react'
 import{
   BrowserRouter as Router,
   Routes,
@@ -23,6 +22,23 @@ function App() {
       </Routes>
     </Router>
     </>
+
+
+import Home from './components/hero/Home'
+import OurResults from './components/OurResults'
+import OfflineCenter from './components/OfflineCenter'
+import Table from './components/Table'
+
+function App() {
+  return (
+    <div className="App">
+      <Navbar />
+      <Home />
+      <AndroidApp />
+      <OurResults />
+      <OfflineCenter />
+      <Table />
+    </div>
 
   )
 }

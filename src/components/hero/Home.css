@@ -1,0 +1,93 @@
+.hero {
+  position: relative;
+  margin: 12px;
+  padding: 20px 0;
+  background-color: rgb(255, 153, 0);
+  border-radius: 12px;
+  background: linear-gradient(#0006, #0006),
+    url(https://www.teahub.io/photos/full/50-503419_cute-chemistry-wallpaper-typography-cute-chemistry-background.jpg);
+  /* background-image: url(https://source.unsplash.com/2600x1200?city); */
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 80vh;
+  /*   background-color: #eee; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero h3 {
+  font-weight: 100;
+  letter-spacing: 2px;
+}
+.hero h1 {
+  font-size: 60px;
+  font-weight: bold;
+}
+
+.hero h1 span {
+  color: #01ffdd;
+}
+.hero h2 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #01ffdd;
+}
+.hero h2 span {
+  color: black;
+}
+.hero p {
+  color: #878e99;
+  font-size: 18px;
+  line-height: 30px;
+  margin-top: 30px;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero .right_img img {
+  /* width: 50vw; */
+  height: 70vh;
+  padding-right: 20px;
+  border-radius: 25px;
+}
+
+/* .hero .left {
+  margin-right: 10%;
+}
+.hero .right {
+  width: 40%;
+  position: relative;
+}
+.hero .right_img {
+  background: linear-gradient(145deg, #e2e8ec, #ffffff);
+  box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px #ffffff;
+  border-radius: 10px;
+  height: 580px;
+  width: 510px;
+  margin-top: 20%;
+}
+.hero .right_img img {
+  position: absolute;
+  top: 0;
+  right: 10%;
+  width: 510px;
+} */
+@media (max-width: 768px) {
+  .hero .right,
+  .hero .left {
+    width: 100%;
+    margin-left: 20px;
+  }
+
+  .hero .f_flex {
+    flex-direction: column;
+    flex-direction: column-reverse;
+  }
+  .hero .right_img {
+    width: 100%;
+    height: 54vh;
+  }
+}
