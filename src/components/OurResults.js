@@ -17,7 +17,7 @@ function OurResults() {
               CBSE 2023
             </span>
           </div>
-          <div className="my-4 px-4 w-full sm:h-[200px]  mx-auto flex flex-col sm:flex-row justify-evenly shadow-md border border-rose-50 shadow-rose-50">
+          <div className="my-4 px-4 w-full sm:h-[200px]  mx-auto flex flex-col sm:flex-row justify-evenly shadow-md border border-rose-50">
             <div className="w-full sm:w-1/4 sm:basis-1/4 my-2">
               <div className="w-full text-3xl md:text-4xl tracking-wide subpixel-antialiased font-semibold h-1/2 flex justify-center items-center">
                 364
@@ -54,7 +54,7 @@ function OurResults() {
             JEE MAIN 2023
             </span>
           </div>
-          <div className="my-4 px-4 w-full sm:h-[200px]  mx-auto flex flex-col sm:flex-row justify-evenly shadow-md border border-cyan-50 shadow-cyan-50">
+          <div className="my-4 px-4 w-full sm:h-[200px]  mx-auto flex flex-col sm:flex-row justify-evenly shadow-md border border-cyan-50">
             <div className="w-full sm:w-1/4 sm:basis-1/4 my-2">
               <div className="w-full text-3xl md:text-4xl tracking-wide subpixel-antialiased font-semibold h-1/2 flex justify-center items-center">
                 364
@@ -92,7 +92,7 @@ function OurResults() {
               NEET 2023
             </span>
           </div>
-          <div className="my-4 px-4 w-full sm:h-[200px]  mx-auto flex flex-col sm:flex-row justify-evenly shadow-md border border-purple-50 shadow-purple-50">
+          <div className="my-4 px-4 w-full sm:h-[200px]  mx-auto flex flex-col sm:flex-row justify-evenly shadow-md border border-purple-50 ">
             <div className="w-full sm:w-1/4 sm:basis-1/4 my-2">
               <div className="w-full text-3xl md:text-4xl tracking-wide subpixel-antialiased font-semibold h-1/2 flex justify-center items-center">
                 364
