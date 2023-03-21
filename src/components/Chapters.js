@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom';
 
 function Chapters() {
 
@@ -44,7 +45,7 @@ function Chapters() {
             (openAccordian)?setOpenAccordian(0):setOpenAccordian(1);
         }}
         >
-        <i class="fa-solid fa-pen mr-4"></i><span className='font-medium'>Science</span>
+        <i class="fa-solid fa-pen mr-4 text-sky-700"></i><span className='font-medium'>Science</span>
         <span
           class={` ml-auto h-5 w-5 shrink-0 ${openAccordian?"rotate-[-180deg]":"rotate-[0deg]"} fill-[#336dec] transition-transform duration-300 ease-in-out `}>
           <svg

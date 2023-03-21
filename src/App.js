@@ -9,6 +9,7 @@ import Home from './components/Home';
 import CoursesFor10th from './components/CoursesFor10th';
 import CousesForOthersInBoards from './components/CousesForOthersInBoards';
 import Chapters from './components/Chapters';
+import CoursesForJEEAndNeet from './components/CoursesForJEEAndNeet';
 
 function App() {
   return (
@@ -17,8 +18,9 @@ function App() {
     <Router>
       <Routes>
         <Route exact path="/" element={<Home/>} />
-        <Route exact path="/courses" element={<CoursesFor10th/>}/>
-        <Route exact path="/coursesfor" element={<CousesForOthersInBoards/>}/>
+        <Route exact path="/cbse/class10" element={<CoursesFor10th/>}/>
+        <Route exact path="/cbse/:className" element={<CousesForOthersInBoards/>}/>
+        <Route exact path="/:course/:className" element={<CoursesForJEEAndNeet/>}/>
         <Route exact path="/chapters" element={<Chapters/>}/>
       </Routes>
     </Router>
