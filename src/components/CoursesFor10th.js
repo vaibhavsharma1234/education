@@ -23,7 +23,7 @@ function CoursesFor10th(props) {
         <div class="mt-16 lg:mt-0">
           <h1 class="text-4xl md:text-5xl xl:text-6xl font-bold tracking-tight mb-8 text-white"
             >
-            Class   <span>10<sup>th</sup></span>
+            CBSE - Class<span>10<sup>th</sup></span>
           </h1>
           <p class="text-lg text-slate-100">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima officia consequatur
