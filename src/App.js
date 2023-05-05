@@ -10,6 +10,7 @@ import CoursesFor10th from './components/CoursesFor10th';
 import CousesForOthersInBoards from './components/CousesForOthersInBoards';
 import Chapters from './components/Chapters';
 import CoursesForJEEAndNeet from './components/CoursesForJEEAndNeet';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -21,8 +22,10 @@ function App() {
         <Route exact path="/cbse/class10" element={<CoursesFor10th/>}/>
         <Route exact path="/cbse/:className" element={<CousesForOthersInBoards/>}/>
         <Route exact path="/:course/:className" element={<CoursesForJEEAndNeet/>}/>
-        <Route exact path="/chapters" element={<Chapters/>}/>
+        {/* <Route exact path="/:course/:className/:subject" element={<Chapters/>}/> */}
+        <Route exact path="/:course/:className/:subject/chapters" element={<Chapters/>}/>
       </Routes>
+    <Footer/>
     </Router>
     </>
 

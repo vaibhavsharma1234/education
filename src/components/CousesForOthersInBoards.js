@@ -1,30 +1,26 @@
 import React, { useState } from "react";
 import { useParams } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
 function CousesForOthersInBoards(props) {
   const { className } = useParams();
 
-  const [classType, setClassType] = useState();
 
   const [showDropdown1, setShowDropdown1] = useState(0);
-  const [mouseOver1, setMouseOver1] = useState(0);
 
   const [showDropdown2, setShowDropdown2] = useState(0);
-  const [mouseOver2, setMouseOver2] = useState(0);
 
   const [showDropdown3, setShowDropdown3] = useState(0);
-  const [mouseOver3, setMouseOver3] = useState(0);
 
   const [showDropdown4, setShowDropdown4] = useState(0);
-  const [mouseOver4, setMouseOver4] = useState(0);
 
   
 
   return (
     <>
 <section>
-<div className={`container px-6 mx-auto  bg-gradient-to-r ${(className=="Class11"?"from-amber-400 to-amber-300":" from-rose-400 to-rose-300")}  subpixel-antialiased`}>
+<div className={`container px-6 mx-auto  bg-gradient-to-r ${(className=="Class11"?"from-indigo-500 to-indigo-400":" from-rose-400 to-rose-300")}  subpixel-antialiased`}>
     
 <section class="mb-32 text-gray-800 background-radial-gradient ">
  
@@ -51,11 +47,12 @@ function CousesForOthersInBoards(props) {
 </div>
 </section>
 
-      <section class="text-gray-600 py-8 flex justify-center items-center shadow-md   w-3/4 mx-auto my-20 body-font">
+  <Link to={`/cbse/${className}/Chemistry/chapters`}>
+      <section class="bg-white text-gray-600 py-8 flex justify-center items-center shadow-md   w-3/4 mx-auto my-20 body-font">
         <div className="w-2/5 flex h-[280px] justify-start py-8 mx-8 bg-[url('https://source.unsplash.com/random?science')]"></div>
         <div className="w-3/5 h-full">
           <h1 class="md:text-3xl mt-9 text-2xl font-medium title-font text-gray-900">
-            <i class={`fa-sharp fa-solid fa-flask  mr-2 ${(className=="Class11"?"text-amber-400":" text-rose-500")}`}></i>Chemistry
+            <i class={`fa-sharp fa-solid fa-flask  mr-2 ${(className=="Class11"?"text-indigo-500":" text-rose-500")}`}></i>Chemistry
           </h1>
           <h3 class="text-md mt-2 title-font text-gray-500">
             "Exploring the building blocks of the universe with chemistry."
@@ -64,26 +61,26 @@ function CousesForOthersInBoards(props) {
           <div className="w-3/4 flex  mt-8">
             <div className="border-r-2 border-gray-400 h-full w-1/3 flex flex-col justify-center items-center">
               <div>
-                <i class={`fa-solid fa-vial text-3xl  ${(className=="Class11"?"text-amber-400":" text-rose-500")}`}></i>
+                <i class={`fa-solid fa-vial text-3xl  ${(className=="Class11"?"text-indigo-500":" text-rose-500")}`}></i>
               </div>
               <div className="mt-1">Elements</div>
             </div>
             <div className=" h-full w-1/3 border-r-2 border-gray-400 flex flex-col justify-center items-center">
               <div>
-              <i class={`fa-solid fa-flask-vial text-3xl  ${(className=="Class11"?"text-amber-400":" text-rose-500")}`}></i>
+              <i class={`fa-solid fa-flask-vial text-3xl  ${(className=="Class11"?"text-indigo-500":" text-rose-500")}`}></i>
               </div>
               <div className="mt-1">Matter</div>
             </div>
             <div className="h-full w-1/3 flex flex-col justify-center items-center">
               <div>
-              <i class={`fa-solid fa-atom text-3xl  ${(className=="Class11"?"text-amber-400":" text-rose-500")}`}></i>
+              <i class={`fa-solid fa-atom text-3xl  ${(className=="Class11"?"text-indigo-500":" text-rose-500")}`}></i>
               </div>
               <div className="mt-1">Atom</div>
             </div>
           </div>
           <div className="relative w-full flex justify-end pr-16">
             <button
-              class={`text-white relative  ${(className=="Class11"?"bg-amber-400 hover:bg-amber-500":" bg-rose-500 hover:bg-rose-600")} mt-12 border-0 py-2 px-3 focus:outline-none  rounded text-md`}
+              class={`text-white relative  ${(className=="Class11"?"bg-indigo-500 hover:bg-indigo-600":" bg-rose-500 hover:bg-rose-600")} mt-12 border-0 py-2 px-3 focus:outline-none  rounded text-md`}
               onMouseOver={(e)=>{
                 e.preventDefault();
                 setShowDropdown1(1);
@@ -138,13 +135,14 @@ function CousesForOthersInBoards(props) {
           </div>
         </div>
       </section>
+                </Link>
 
-
-      <section class="text-gray-600 py-8 flex justify-center items-center shadow-md   w-3/4 mx-auto my-20 body-font">
+  <Link to={`/cbse/${className}/Physics/chapters`}>
+      <section class="bg-white text-gray-600 py-8 flex justify-center items-center shadow-md   w-3/4 mx-auto my-20 body-font">
         <div className="w-2/5 flex h-[280px] justify-start py-8 mx-8 bg-[url('https://source.unsplash.com/random?physics')]"></div>
         <div className="w-3/5 h-full">
           <h1 class="md:text-3xl mt-9 text-2xl font-medium title-font text-gray-900">
-          <i class={`fa-solid fa-temperature-low text-3xl  ${(className=="Class11"?"text-amber-400":" text-rose-500")} mr-2`}></i>Physics
+          <i class={`fa-solid fa-temperature-low text-3xl  ${(className=="Class11"?"text-indigo-500":" text-rose-500")} mr-2`}></i>Physics
           </h1>
           <h3 class="text-md mt-2 title-font text-gray-500">
           "Unlocking the secrets of the universe through the language of nature."
@@ -153,26 +151,26 @@ function CousesForOthersInBoards(props) {
           <div className="w-3/4 flex  mt-8">
             <div className="border-r-2 border-gray-400 h-full w-1/3 flex flex-col justify-center items-center">
               <div>
-                <i class={`fa-brands fa-space-awesome text-3xl ${(className=="Class11"?"text-amber-400":" text-rose-500")} `}></i>
+                <i class={`fa-brands fa-space-awesome text-3xl ${(className=="Class11"?"text-indigo-500":" text-rose-500")} `}></i>
               </div>
               <div className="mt-1">Proofs</div>
             </div>
             <div className=" h-full w-1/3 border-r-2 border-gray-400 flex flex-col justify-center items-center">
               <div>
-                <i class={`fa-solid  fa-user-astronaut text-3xl ${(className=="Class11"?"text-amber-400":" text-rose-500")}`}></i>
+                <i class={`fa-solid  fa-user-astronaut text-3xl ${(className=="Class11"?"text-indigo-500":" text-rose-500")}`}></i>
               </div>
               <div className="mt-1">Patterns</div>
             </div>
             <div className="h-full w-1/3 flex flex-col justify-center items-center">
               <div>
-                <i class={`fa-solid fa-fire-flame-simple text-3xl ${(className=="Class11"?"text-amber-400":" text-rose-500")}`}></i>
+                <i class={`fa-solid fa-fire-flame-simple text-3xl ${(className=="Class11"?"text-indigo-500":" text-rose-500")}`}></i>
               </div>
               <div className="mt-1">Nature</div>
             </div>
           </div>
           <div className="relative w-full flex justify-end pr-16">
             <button
-              class={`text-white relative  mt-12   ${(className=="Class11"?"bg-amber-400 hover:bg-amber-500":" bg-rose-500 hover:bg-rose-600")} border-0 py-2 px-3 focus:outline-none  rounded text-md`}
+              class={`text-white relative  mt-12   ${(className=="Class11"?"bg-indigo-500 hover:bg-indigo-600":" bg-rose-500 hover:bg-rose-600")} border-0 py-2 px-3 focus:outline-none  rounded text-md`}
               onMouseOver={(e)=>{
                 e.preventDefault();
                 setShowDropdown2(1);
@@ -227,14 +225,15 @@ function CousesForOthersInBoards(props) {
           </div>
         </div>
       </section>
+      </Link>
 
 
-
+      <Link to={`/cbse/${className}/Mathematics/chapters`}>
       <section class="text-gray-600 py-8 flex justify-center items-center shadow-md   w-3/4 mx-auto my-20 body-font">
         <div className="w-2/5 flex h-[280px] justify-start py-8 mx-8 bg-[url('https://source.unsplash.com/random?maths')]"></div>
         <div className="w-3/5 h-full">
           <h1 class="md:text-3xl mt-9 text-2xl font-medium title-font text-gray-900">
-            <i class={`fa-solid fa-not-equal ${(className=="Class11"?"text-amber-400":" text-rose-500")} mr-2`}></i>Mathematics
+            <i class={`fa-solid fa-not-equal ${(className=="Class11"?"text-indigo-500":" text-rose-500")} mr-2`}></i>Mathematics
           </h1>
           <h3 class="text-md mt-2 title-font text-gray-500">
           "Discover the beauty of logic and the power of numbers with mathematics."
@@ -243,26 +242,26 @@ function CousesForOthersInBoards(props) {
           <div className="w-3/4 flex  mt-8">
             <div className="border-r-2 border-gray-400 h-full w-1/3 flex flex-col justify-center items-center">
               <div>
-                <i class={`fa-solid fa-calculator text-3xl ${(className=="Class11"?"text-amber-400":" text-rose-500")}`}></i>
+                <i class={`fa-solid fa-calculator text-3xl ${(className=="Class11"?"text-indigo-500":" text-rose-500")}`}></i>
               </div>
               <div className="mt-1">Precision</div>
             </div>
             <div className=" h-full w-1/3 border-r-2 border-gray-400 flex flex-col justify-center items-center">
               <div>
-                <i class={`fa-solid  fa-square-root-variable text-3xl ${(className=="Class11"?"text-amber-400":" text-rose-500")}`}></i>
+                <i class={`fa-solid  fa-square-root-variable text-3xl ${(className=="Class11"?"text-indigo-500":" text-rose-500")}`}></i>
               </div>
               <div className="mt-1">Computation</div>
             </div>
             <div className="h-full w-1/3 flex flex-col justify-center items-center">
               <div>
-                <i class={`fa-solid fa-infinity text-3xl ${(className=="Class11"?"text-amber-400":" text-rose-500")}`}></i>
+                <i class={`fa-solid fa-infinity text-3xl ${(className=="Class11"?"text-indigo-500":" text-rose-500")}`}></i>
               </div>
               <div className="mt-1">Abstraction</div>
             </div>
           </div>
           <div className="relative w-full flex justify-end pr-16">
             <button
-              class={`text-white relative  mt-12   ${(className=="Class11"?"bg-amber-400 hover:bg-amber-500":" bg-rose-500 hover:bg-rose-600")} border-0 py-2 px-3 focus:outline-none rounded text-md`}
+              class={`text-white relative  mt-12   ${(className=="Class11"?"bg-indigo-500 hover:bg-indigo-600":" bg-rose-500 hover:bg-rose-600")} border-0 py-2 px-3 focus:outline-none rounded text-md`}
               onMouseOver={(e)=>{
                 e.preventDefault();
                 setShowDropdown3(1);
@@ -317,13 +316,14 @@ function CousesForOthersInBoards(props) {
           </div>
         </div>
       </section>
+      </Link>
 
-
-      <section class="text-gray-600 py-8 flex justify-center items-center shadow-md   w-3/4 mx-auto my-20 body-font">
+      <Link to={`/cbse/${className}/Biology/chapters`}>
+      <section class="bg-white text-gray-600 py-8 flex justify-center items-center shadow-md   w-3/4 mx-auto my-20 body-font">
         <div className="w-2/5 flex h-[280px] justify-start py-8 mx-8 bg-[url('https://source.unsplash.com/random?biology')]"></div>
         <div className="w-3/5 h-full">
           <h1 class="md:text-3xl mt-9 text-2xl font-medium title-font text-gray-900">
-            <i class={`fa-solid fa-temperature-low ${(className=="Class11"?"text-amber-400":" text-rose-500")} mr-2`}></i>Biology
+            <i class={`fa-solid fa-temperature-low ${(className=="Class11"?"text-indigo-500":" text-rose-500")} mr-2`}></i>Biology
           </h1>
           <h3 class="text-md mt-2 title-font text-gray-500">
           "Discovering the mysteries of life, one cell at a time."
@@ -332,26 +332,26 @@ function CousesForOthersInBoards(props) {
           <div className="w-3/4 flex  mt-8">
             <div className="border-r-2 border-gray-400 h-full w-1/3 flex flex-col justify-center items-center">
               <div>
-                <i class={`fa-solid fa-dna text-3xl ${(className=="Class11"?"text-amber-400":" text-rose-500")}`}></i>
+                <i class={`fa-solid fa-dna text-3xl ${(className=="Class11"?"text-indigo-500":" text-rose-500")}`}></i>
               </div>
               <div className="mt-1">Research</div>
             </div>
             <div className=" h-full w-1/3 border-r-2 border-gray-400 flex flex-col justify-center items-center">
               <div>
-                <i class={`fa-solid  fa-tablets text-3xl ${(className=="Class11"?"text-amber-400":" text-rose-500")}`}></i>
+                <i class={`fa-solid  fa-tablets text-3xl ${(className=="Class11"?"text-indigo-500":" text-rose-500")}`}></i>
               </div>
               <div className="mt-1">Observation</div>
             </div>
             <div className="h-full w-1/3 flex flex-col justify-center items-center">
               <div>
-                <i class={`fa-solid fa-radiation text-3xl ${(className=="Class11"?"text-amber-400":" text-rose-500")}`}></i>
+                <i class={`fa-solid fa-radiation text-3xl ${(className=="Class11"?"text-indigo-500":" text-rose-500")}`}></i>
               </div>
               <div className="mt-1">Methodology</div>
             </div>
           </div>
           <div className="relative w-full flex justify-end pr-16">
             <button
-              class={`text-white relative  mt-12  ${(className=="Class11"?"bg-amber-400 hover:bg-amber-500":" bg-rose-500 hover:bg-rose-600")} border-0 py-2 px-3 focus:outline-none rounded text-md`}
+              class={`text-white relative  mt-12  ${(className=="Class11"?"bg-indigo-500 hover:bg-indigo-600":" bg-rose-500 hover:bg-rose-600")} border-0 py-2 px-3 focus:outline-none rounded text-md`}
               onMouseOver={(e)=>{
                 e.preventDefault();
                 setShowDropdown4(1);
@@ -406,6 +406,7 @@ function CousesForOthersInBoards(props) {
           </div>
         </div>
       </section>
+      </Link>
     </>
   );
 }
