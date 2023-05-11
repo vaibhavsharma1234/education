@@ -1,7 +1,7 @@
 import React from 'react'
 import './Home.css'
 
-export default function Home() {
+export default function Home1() {
   return (
     <>
       <section className="hero" id="home">
