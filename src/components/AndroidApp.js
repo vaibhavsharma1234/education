@@ -2,7 +2,7 @@ import React from "react";
 
 function AndroidApp() {
   return (
-    <section class="text-gray-600 w-3/4 mx-auto body-font">
+    <section class="text-gray-600 w-3/4 mt-32 mx-auto body-font">
         <div className="flex flex-row">
       <div class="container py-24 mx-auto">
         <div class="flex flex-col w-full md:pr-10 md:mb-0 mb-6 pr-0 w-full md:w-auto md:text-left text-center">

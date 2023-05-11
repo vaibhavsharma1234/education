@@ -1,25 +1,20 @@
 import React from 'react'
 import { useParams } from "react-router-dom";
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function CoursesForJEEAndNeet() {
 
 
     const { className, course } = useParams();
 
-    const [classType, setClassType] = useState();
   
     const [showDropdown1, setShowDropdown1] = useState(0);
-    const [mouseOver1, setMouseOver1] = useState(0);
   
     const [showDropdown2, setShowDropdown2] = useState(0);
-    const [mouseOver2, setMouseOver2] = useState(0);
   
     const [showDropdown3, setShowDropdown3] = useState(0);
-    const [mouseOver3, setMouseOver3] = useState(0);
   
-    const [showDropdown4, setShowDropdown4] = useState(0);
-    const [mouseOver4, setMouseOver4] = useState(0);
   
     
     let checkCategory = () => {
@@ -135,8 +130,8 @@ function CoursesForJEEAndNeet() {
 
 
 
-
-<section class="text-gray-600 py-8 flex justify-center items-center shadow-md   w-3/4 mx-auto my-20 body-font">
+<Link to={`/${course}/${className}/Physical+Inorganic-Chemistry/chapters`}>
+<section class="bg-white text-gray-600 py-8 flex justify-center items-center shadow-md   w-3/4 mx-auto my-20 body-font">
         <div className="w-2/5 flex h-[280px] justify-start py-8 mx-8 bg-[url('https://source.unsplash.com/random?science')]"></div>
         <div className="w-3/5 h-full">
           <h1 class="md:text-3xl mt-9 text-2xl font-medium title-font text-gray-900">
@@ -223,11 +218,11 @@ function CoursesForJEEAndNeet() {
           </div>
         </div>
       </section>
+      </Link>
 
 
-
-
-      <section class="text-gray-600 py-8 flex justify-center items-center shadow-md   w-3/4 mx-auto my-20 body-font">
+      <Link to={`/${course}/${className}/Organic-Chemistry/chapters`}>
+      <section class="bg-white text-gray-600 py-8 flex justify-center items-center shadow-md   w-3/4 mx-auto my-20 body-font">
         <div className="w-2/5 flex h-[280px] justify-start py-8 mx-8 bg-[url('https://source.unsplash.com/random?physics')]"></div>
         <div className="w-3/5 h-full">
           <h1 class="md:text-3xl mt-9 text-2xl font-medium title-font text-gray-900">
@@ -314,10 +309,10 @@ function CoursesForJEEAndNeet() {
           </div>
         </div>
       </section>
+      </Link>
 
-
-
-      <section class="text-gray-600 py-8 flex justify-center items-center shadow-md   w-3/4 mx-auto my-20 body-font">
+      {/* <Link to={`/${course}/${className}/Mathematics/chapters`}>
+      <section class="bg-white text-gray-600 py-8 flex justify-center items-center shadow-md   w-3/4 mx-auto my-20 body-font">
         <div className="w-2/5 flex h-[280px] justify-start py-8 mx-8 bg-[url('https://source.unsplash.com/random?maths')]"></div>
         <div className="w-3/5 h-full">
           <h1 class="md:text-3xl mt-9 text-2xl font-medium title-font text-gray-900">
@@ -404,7 +399,7 @@ function CoursesForJEEAndNeet() {
           </div>
         </div>
       </section>
-
+      </Link> */}
 
 
      

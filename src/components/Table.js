@@ -12,7 +12,7 @@ function Table() {
           Our Courses
         </h1>
       </div>
-      <section className="w-3/4 mx-auto flex flex-row  my-12 h-[450px] bg-white-50 shadow-md ">
+      <section className="w-3/4 mx-auto flex flex-row  my-12 h-[450px]  shadow-md rounded-lg ">
         <div className="h-full w-1/4 bg-gray-100 ">
           <div className="h-3/5 w-full justify-evenly items-center flex flex-col">
             <button
@@ -45,10 +45,10 @@ function Table() {
           </div>
         </div>
 
-        <div className={`h-full w-3/4 ${category === 1 ? "block" : "hidden"}`}>
+        <div className={`h-full w-3/4 ${category === 1 ? "block" : "hidden"} bg-white`}>
           <div className="w-full justify-evenly my-10 flex flex-row ">
             <Link to="/cbse/Class10">
-              <div className="w-64 relative bg-gradient-to-r from-stone-300 to-neutral-300 shadow-sm overflow-hidden rounded-md h-[150px] cursor-pointer">
+              <div className="w-64 relative bg-gradient-to-r from-stone-300 to-neutral-300 shadow-md overflow-hidden rounded-md h-[150px] cursor-pointer">
                 <div className="w-full pt-5 antialiased pl-5 text-neutral-900 font-semibold text-xl h-[20px]">
                   Class 10<sup>th</sup>
                   <div className="text-xs">CBSE</div>
@@ -60,7 +60,7 @@ function Table() {
               </div>
             </Link>
             <Link to="/cbse/Class11">
-              <div className="w-64 relative bg-gradient-to-r from-red-300 to-rose-300 shadow-sm overflow-hidden rounded-md h-[150px] cursor-pointer">
+              <div className="w-64 relative bg-gradient-to-r from-red-300 to-rose-300 shadow-md overflow-hidden rounded-md h-[150px] cursor-pointer">
                 <div className="w-full pt-5 antialiased pl-5 text-rose-900 font-semibold text-xl h-[20px]">
                   Class 11<sup>th</sup>
                   <div className="text-xs">CBSE</div>
@@ -72,7 +72,7 @@ function Table() {
               </div>
             </Link>
             <Link to="/cbse/Class12">
-              <div className="w-64 relative bg-gradient-to-r from-violet-300 to-purple-300 shadow-sm overflow-hidden rounded-md h-[150px] cursor-pointer">
+              <div className="w-64 relative bg-gradient-to-r from-violet-300 to-purple-300 shadow-md overflow-hidden rounded-md h-[150px] cursor-pointer">
                 <div className="w-full pt-5 antialiased pl-5 text-violet-900 font-semibold text-xl h-[20px]">
                   Class 12<sup>th</sup>
                   <div className="text-xs">CBSE</div>
@@ -87,10 +87,10 @@ function Table() {
         </div>
         
 
-        <div className={`h-full w-3/4 ${category === 2 ? "block" : "hidden"}`}>
+        <div className={`h-full bg-white w-3/4 ${category === 2 ? "block" : "hidden"}`}>
           <div className="w-full justify-evenly my-10 flex flex-row ">
           <Link to="/jee/Class11">
-            <div className="w-64 relative bg-gradient-to-r from-green-300 to-emerald-300 shadow-sm overflow-hidden rounded-md h-[150px] cursor-pointer">
+            <div className="w-64 relative bg-gradient-to-r from-green-300 to-emerald-300 shadow-md overflow-hidden rounded-md h-[150px] cursor-pointer">
               <div className="w-full pt-5 antialiased pl-5 text-emerald-900 font-semibold text-xl h-[20px]">
                 Class 11<sup>th</sup>
                 <div className="text-xs">JEE</div>
@@ -102,7 +102,7 @@ function Table() {
             </div>
             </Link>
             <Link to="/jee/Class12">
-            <div className="w-64 relative bg-gradient-to-r from-blue-300 to-sky-300 shadow-sm overflow-hidden rounded-md h-[150px] cursor-pointer">
+            <div className="w-64 relative bg-gradient-to-r from-blue-300 to-sky-300 shadow-md overflow-hidden rounded-md h-[150px] cursor-pointer">
               <div className="w-full pt-5 antialiased pl-5 text-sky-900 font-semibold text-xl h-[20px]">
                 Class 12<sup>th</sup>
                 <div className="text-xs">JEE</div>
@@ -114,7 +114,7 @@ function Table() {
             </div>
             </Link>
             <Link to="/jee/Advanced">
-            <div className="w-64 relative bg-gradient-to-r from-pink-300 to-fuchsia-300 shadow-sm overflow-hidden rounded-md h-[150px] cursor-pointer">
+            <div className="w-64 relative bg-gradient-to-r from-pink-300 to-fuchsia-300 shadow-md overflow-hidden rounded-md h-[150px] cursor-pointer">
               <div className="w-full pt-5 antialiased pl-5 text-fuchsia-900 font-semibold text-xl h-[20px]">
                 Advanced
                 <div className="text-xs">JEE</div>
@@ -128,10 +128,10 @@ function Table() {
           </div>
         </div>
 
-        <div className={`h-full w-3/4 ${category === 3 ? "block" : "hidden"}`}>
+        <div className={`h-full bg-white w-3/4 ${category === 3 ? "block" : "hidden"}`}>
           <div className="w-full justify-evenly my-10 flex flex-row ">
           <Link to="/neet/Class11">
-            <div className="w-64 relative bg-gradient-to-r from-cyan-300 to-blue-300 shadow-sm overflow-hidden rounded-md h-[150px] cursor-pointer">
+            <div className="w-64 relative bg-gradient-to-r from-cyan-300 to-blue-300 shadow-md overflow-hidden rounded-md h-[150px] cursor-pointer">
               <div className="w-full pt-5 antialiased pl-5 text-blue-900 font-semibold text-xl h-[20px]">
                 Class 11<sup>th</sup>
                 <div className="text-xs">NEET</div>
@@ -143,7 +143,7 @@ function Table() {
             </div>
             </Link>
             <Link to="/neet/Class12">
-            <div className="w-64 relative bg-gradient-to-r from-amber-300 to-yellow-300 shadow-sm overflow-hidden rounded-md h-[150px] cursor-pointer">
+            <div className="w-64 relative bg-gradient-to-r from-amber-300 to-yellow-300 shadow-md overflow-hidden rounded-md h-[150px] cursor-pointer">
               
               <div className="w-full pt-5 antialiased pl-5 text-amber-900 font-semibold text-xl h-[20px]">
                 Class 12<sup>th</sup>
