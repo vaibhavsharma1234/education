@@ -5,12 +5,12 @@ function OfflineCenter() {
     
 
   return (
-    <section class="text-gray-600 h-[350px] flex justify-center items-center shadow-md   w-3/4 mx-auto my-20 body-font">
+    <section class="text-gray-600 h-[350px] flex justify-center items-center shadow-md   w-3/4 mx-auto my-32 body-font bg-white rounded-lg">
        
-        <div className='w-1/2 flex justify-start ml-8 py-8 h-full'>
-            <img className="w-3/4 mx-2 bg-slate-700 rounded-lg" src={`${background}`} alt=''></img>
+        <div className='w-2/5 flex mr-4 justify-start px-8 py-8 h-full'>
+            <img className="w-full r-8 mx-2 bg-slate-700 rounded-lg" src={`${background}`} alt=''></img>
         </div>
-        <div className='w-1/2 h-full'>
+        <div className='w-3/5 h-full'>
             <h1 class="md:text-3xl mt-9 text-2xl font-medium title-font text-gray-900">
                 Reach Our Offline Center
             </h1>

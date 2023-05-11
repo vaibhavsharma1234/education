@@ -1,11 +1,10 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 function CoursesFor10th(props) {
   const [showDropdown1, setShowDropdown1] = useState(0);
-  const [mouseOver1, setMouseOver1] = useState(0);
 
   const [showDropdown2, setShowDropdown2] = useState(0);
-  const [mouseOver2, setMouseOver2] = useState(0);
 
   
 
@@ -37,8 +36,9 @@ function CoursesFor10th(props) {
 
 </div>
 </section>
-
-      <section class="text-gray-600 py-8 flex justify-center items-center shadow-md   w-3/4 mx-auto my-20 body-font">
+<section>
+    <Link to="/cbse/Class10/Science/chapters">
+      <section class="bg-white text-gray-600 py-8 flex justify-center items-center shadow-md   w-3/4 mx-auto my-20 body-font">
         <div className="w-2/5 flex h-[280px] justify-start py-8 mx-8 bg-[url('https://source.unsplash.com/random?science')]"></div>
         <div className="w-3/5 h-full">
           <h1 class="md:text-3xl mt-9 text-2xl font-medium title-font text-gray-900">
@@ -126,10 +126,10 @@ function CoursesFor10th(props) {
           </div>
         </div>
       </section>
+      </Link>
 
-
-
-      <section class="text-gray-600 py-8 flex justify-center items-center shadow-md   w-3/4 mx-auto my-20 body-font">
+      <Link to="/cbse/Class10/Mathematics/chapters">
+      <section class="bg-white text-gray-600 py-8 flex justify-center items-center shadow-md   w-3/4 mx-auto my-20 body-font">
         <div className="w-2/5 flex h-[280px] justify-start py-8 mx-8 bg-[url('https://source.unsplash.com/random?maths')]"></div>
         <div className="w-3/5 h-full">
           <h1 class="md:text-3xl mt-9 text-2xl font-medium title-font text-gray-900">
@@ -215,6 +215,8 @@ function CoursesFor10th(props) {
             </button>
           </div>
         </div>
+      </section>
+      </Link>
       </section>
     </>
   );
