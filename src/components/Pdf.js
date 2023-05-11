@@ -1,12 +1,13 @@
-export const Pdf = () => {
+export const Pdf = (props) => {
   return (
-    <div>
+    <div className="mx-auto w-2/5">
       <iframe
         title="education pdf"
-        src="https://drive.google.com/file/d/16G_wYxPuvLnlfu_xqE54yXNUwyMCsR8W/preview"
-        width="640"
-        height="480"
+        src={`https://drive.google.com/file/d/${props.pdfName}/preview`}
+        width={'100%'}
+          height={'100%'}
         allow="autoplay"
+
       ></iframe>
     </div>
   )

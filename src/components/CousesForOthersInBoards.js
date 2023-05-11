@@ -22,7 +22,7 @@ function CousesForOthersInBoards(props) {
 <section>
 <div className={`container px-6 mx-auto  bg-gradient-to-r ${(className=="Class11"?"from-indigo-500 to-indigo-400":" from-rose-400 to-rose-300")}  subpixel-antialiased`}>
     
-<section class="mb-32 text-gray-800 background-radial-gradient ">
+<section class="text-gray-800 background-radial-gradient ">
  
 
   <div class="px-6 py-12 md:px-12 text-center lg:text-left">
@@ -49,7 +49,7 @@ function CousesForOthersInBoards(props) {
 
   <Link to={`/cbse/${className}/Chemistry/chapters`}>
       <section class="bg-white text-gray-600 py-8 flex justify-center items-center shadow-md   w-3/4 mx-auto my-20 body-font">
-        <div className="w-2/5 flex h-[280px] justify-start py-8 mx-8 bg-[url('https://source.unsplash.com/random?science')]"></div>
+        <div className="w-2/5 flex h-[280px] justify-start py-8 mx-8 bg-[url('https://source.unsplash.com/yS3XM9qx3hQ')]"></div>
         <div className="w-3/5 h-full">
           <h1 class="md:text-3xl mt-9 text-2xl font-medium title-font text-gray-900">
             <i class={`fa-sharp fa-solid fa-flask  mr-2 ${(className=="Class11"?"text-indigo-500":" text-rose-500")}`}></i>Chemistry
@@ -139,7 +139,7 @@ function CousesForOthersInBoards(props) {
 
   <Link to={`/cbse/${className}/Physics/chapters`}>
       <section class="bg-white text-gray-600 py-8 flex justify-center items-center shadow-md   w-3/4 mx-auto my-20 body-font">
-        <div className="w-2/5 flex h-[280px] justify-start py-8 mx-8 bg-[url('https://source.unsplash.com/random?physics')]"></div>
+        <div className="w-2/5 flex h-[280px] justify-start py-8 mx-8 bg-[url('https://source.unsplash.com/gYrYa37fAKI')]"></div>
         <div className="w-3/5 h-full">
           <h1 class="md:text-3xl mt-9 text-2xl font-medium title-font text-gray-900">
           <i class={`fa-solid fa-temperature-low text-3xl  ${(className=="Class11"?"text-indigo-500":" text-rose-500")} mr-2`}></i>Physics

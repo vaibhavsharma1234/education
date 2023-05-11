@@ -9,6 +9,8 @@ import Yt from './components/Yt'
 import { Pdf } from './components/Pdf'
 import YoutubeAndFile from './components/YoutubeAndFile'
 import Testimonial from './components/Testimonial'
+import Footer from './components/Footer'
+
 
 function App() {
   return (
@@ -28,11 +30,13 @@ function App() {
             path="/:course/:className"
             element={<CoursesForJEEAndNeet />}
           />
-          <Route exact path="/chapters" element={<Chapters />} />
-          <Route exact path="/youtube" element={<YoutubeAndFile />} />
-          <Route exact path="/pdf" element={<Testimonial />} />
+          <Route exact path="/:course/:className/:subject/chapters" element={<Chapters />} />
+          <Route exact path="/:course/:className/:subject/chapters/:topic/:name/:video/:pdf" element={<YoutubeAndFile/>} />
+          {/* <Route exact path="/youtube" element={<YoutubeAndFile />} />
+          <Route exact path="/pdf" element={<Testimonial />} /> */}
         </Routes>
       </Router>
+      <Footer/>
     </>
   )
 }

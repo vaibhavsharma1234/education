@@ -13,7 +13,7 @@ function CoursesFor10th(props) {
 <section>
 <div class="container px-6 mx-auto  bg-gradient-to-r from-sky-700 to-blue-700 subpixel-antialiased">
 
-<section class="mb-32 text-gray-800 background-radial-gradient ">
+<section class="text-gray-800 background-radial-gradient ">
  
 
   <div class="px-6 py-12 md:px-12 text-center lg:text-left">
@@ -39,7 +39,7 @@ function CoursesFor10th(props) {
 <section>
     <Link to="/cbse/Class10/Science/chapters">
       <section class="bg-white text-gray-600 py-8 flex justify-center items-center shadow-md   w-3/4 mx-auto my-20 body-font">
-        <div className="w-2/5 flex h-[280px] justify-start py-8 mx-8 bg-[url('https://source.unsplash.com/random?science')]"></div>
+        <div className="w-2/5 flex h-[280px] justify-start py-8 mx-8 bg-[url('https://source.unsplash.com/L7en7Lb-Ovc?w=500&h=500')]"></div>
         <div className="w-3/5 h-full">
           <h1 class="md:text-3xl mt-9 text-2xl font-medium title-font text-gray-900">
             <i class="fa-sharp fa-solid fa-flask text-sky-700 mr-2"></i>Science
@@ -130,7 +130,7 @@ function CoursesFor10th(props) {
 
       <Link to="/cbse/Class10/Mathematics/chapters">
       <section class="bg-white text-gray-600 py-8 flex justify-center items-center shadow-md   w-3/4 mx-auto my-20 body-font">
-        <div className="w-2/5 flex h-[280px] justify-start py-8 mx-8 bg-[url('https://source.unsplash.com/random?maths')]"></div>
+        <div className="w-2/5 flex h-[280px] justify-start py-8 mx-8 bg-[url('https://source.unsplash.com/h3kuhYUCE9A?w=500&h=500')]"></div>
         <div className="w-3/5 h-full">
           <h1 class="md:text-3xl mt-9 text-2xl font-medium title-font text-gray-900">
             <i class="fa-solid fa-not-equal text-sky-700 mr-2"></i>Mathematics

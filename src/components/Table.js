@@ -12,7 +12,7 @@ function Table() {
           Our Courses
         </h1>
       </div>
-      <section className="w-3/4 mx-auto flex flex-row  my-12 h-[450px]  shadow-md rounded-lg ">
+      <section className="w-3/4 mx-auto flex flex-row  my-12 mb-24 h-[450px]  shadow-md rounded-lg ">
         <div className="h-full w-1/4 bg-gray-100 ">
           <div className="h-3/5 w-full justify-evenly items-center flex flex-col">
             <button

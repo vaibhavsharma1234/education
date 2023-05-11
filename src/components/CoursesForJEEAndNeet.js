@@ -103,7 +103,7 @@ function CoursesForJEEAndNeet() {
     <section>
 <div className={`container px-6 mx-auto  bg-gradient-to-r ${categoryColor} subpixel-antialiased`}>
     
-<section class="mb-32 text-gray-800 background-radial-gradient ">
+<section class="text-gray-800 background-radial-gradient ">
  
 
   <div class="px-6 py-12 md:px-12 text-center lg:text-left">
